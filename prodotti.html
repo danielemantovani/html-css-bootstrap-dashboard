@@ -41,54 +41,36 @@
     <!-- Sidebar -->
     <div class="container-fluid">
         <div class="row">
-            <div class="sidebar col-md-4 col-lg-3 col-xl-2 collapse d-md-block bg-dark" id="navbarSupportedContent">
+            <div class="sidebar col-md-3 col-lg-3 col-xl-2 collapse d-md-block bg-dark" id="navbarSupportedContent">
                 <a href="/"
                     class="d-flex align-items-start mb-3 mb-md-0 me-md-auto text-white text-decoration-none mt-4">
-                    <svg class="bi pe-none me-2" width="0" height="32">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg>
-                    <span class="fs-6">BOOTSTRAP DASHBOARD</span>
+                    <span class="fs-4">BOOTSTRAP DASHBOARD</span>
                 </a>
                 <hr class="text-white">
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link text-white" aria-current="page">
-                            <svg class="bi pe-none" width="16" height="16">
-                                <use xlink:href="#home"></use>
-                            </svg>
                             <i class="fa-solid fa-house me-2"></i>Dashboard
                         </a>
                     </li>
                     <li>
                         <a href="sposorizzazione.html" class="nav-link text-white">
-                            <svg class="bi pe-none" width="16" height="16">
-                                <use xlink:href="#speedometer2"></use>
-                            </svg>
                             <i class="fa-solid fa-arrow-trend-up me-2"></i>Sponsorizzazione
                         </a>
                     </li>
                     <li>
                         <a href="prodotti.html" class="nav-link active text-white">
-                            <svg class="bi pe-none" width="16" height="16">
-                                <use xlink:href="#table"></use>
-                            </svg>
                             <i class="fa-solid fa-box me-2"></i> Prodotti
                         </a>
                     </li>
                     <li>
                         <a href="nuovo-prodotto.html" class="nav-link text-white">
-                            <svg class="bi pe-none" width="16" height="16">
-                                <use xlink:href="#grid"></use>
-                            </svg>
                             <i class="fa-solid fa-plus me-2"></i>Nuovo prodotto
                         </a>
                     </li>
                     <li>
                         <a href="#" class="nav-link text-white">
-                            <svg class="bi pe-none" width="16" height="16">
-                                <use xlink:href="#people-circle"></use>
-                            </svg>
-                            </i><i class="fa-solid fa-user-secret me-2"></i>Clienti
+                            <i class="fa-solid fa-user-secret me-2"></i>Clienti
                         </a>
                     </li>
                 </ul>
@@ -113,179 +95,246 @@
             </div>
 
             <!-- Main -->
-            <main class="col-md-8 col-lg-9">
-                <div class="d-flex justify-content-between py-2">
+            <main class="col-md-9 col-lg-9 min-vh-100">
+                <div class="d-flex justify-content-between">
                     <h2>10 Prodotti trovati</h2>
                     <div class="btn-group-sm ">
                         <a href="#" class="btn btn-outline-secondary">Esporta</a>
-                        <a href="#" class="btn btn-outline-secondary active" aria-current="page">Nuovo</a>
-                        
+                        <a href="#" class="btn btn-outline-secondary">Nuovo</a>
                     </div>
                 </div>
                 <hr>
                 <table class="table">
                     <thead>
-                        <tr class="text-center ">
+                        <tr class="text-center">
                             <th class="text-start" scope="col">Nome</th>
-                            <th scope="col">Prezzo</th>
-                            <th scope="col">Stato</th>
+                            <th class="collapse d-sm-table-cell" scope="col">Prezzo</th>
+                            <th class="collapse d-md-table-cell" scope="col">Stato</th>
                             <th scope="col">Azioni</th>
                         </tr>
                     </thead>
                     <tbody class="align-middle">
-                        <tr class="text-center">
-                            <th scope="row">
-                                <div class="d-flex">
-                                    <img class=" me-2"
-                                        src="https://fastly.picsum.photos/id/447/246/146.jpg?hmac=voh_lMJAX9XcbR0_PRvf9pcHPH2RrdwJoo3nzyUbBBc"
-                                        alt="">
-                                    <p class="d-block">ciao</p>
-                                    <p class="collapse d-md-block">hola</p>
-                                </div>
+                        <tr>
+                            <th scope="row text-center">
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid me-2" src="https://picsum.photos/50" alt="">
+                                    <div class="text-break">
+                                        <div class="">Smartphone Samsung Galaxy S21</div>
+                                        <div class="collapse d-md-block small fw-light">Display AMOLED, fotocamera Ultra
+                                            Wide, batteria a lunga durata</div>
+                                    </div>
                             </th>
-                            <td>799,99€</td>
-                            <td>
+                            <td class="text-center collapse d-sm-table-cell">799,99€</td>
+                            <td class="text-center collapse d-md-table-cell">
                                 <i
                                     class="fa-solid fa-check text-success border border-success rounded-circle px-1 py-1"></i>
                             </td>
-                            <td>
+                            <td class="text-center">
                                 <i class="fa-solid fa-pen text-primary border border-primary rounded p-1"></i>
                                 <i class="fa-solid fa-trash text-danger border border-danger rounded p-1"></i>
                             </td>
-                        </tr>
-                        <tr class="text-center">
-                            <th class=" d-flex" scope="row"><img class=" w-25 me-2 "
-                                    src="https://fastly.picsum.photos/id/447/246/146.jpg?hmac=voh_lMJAX9XcbR0_PRvf9pcHPH2RrdwJoo3nzyUbBBc"
-                                    alt="">
-                                <div class="">
-                                    <p>ciao</p>
-                                    <p class="collapse d-md-block">hola</p>
-                                </div>
+                        <tr>
+                        <tr>
+                            <th scope="row text-center">
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid me-2" src="https://picsum.photos/50" alt="">
+                                    <div class="text-break">
+                                        <div class="">Smartphone Samsung Galaxy S21</div>
+                                        <div class="collapse d-md-block small fw-light">Display AMOLED, fotocamera Ultra
+                                            Wide, batteria a lunga durata</div>
+                                    </div>
                             </th>
-                            <td>799,99€</td>
-                            <td>
+                            <td class="text-center collapse d-sm-table-cell">799,99€</td>
+                            <td class="text-center collapse d-md-table-cell">
                                 <i
                                     class="fa-solid fa-check text-success border border-success rounded-circle px-1 py-1"></i>
                             </td>
-                            <td>
+                            <td class="text-center">
                                 <i class="fa-solid fa-pen text-primary border border-primary rounded p-1"></i>
                                 <i class="fa-solid fa-trash text-danger border border-danger rounded p-1"></i>
                             </td>
-                        </tr>
-                        <tr class="text-center">
-                            <th class=" d-flex" scope="row"><img class=" w-25 me-2 "
-                                    src="https://fastly.picsum.photos/id/447/246/146.jpg?hmac=voh_lMJAX9XcbR0_PRvf9pcHPH2RrdwJoo3nzyUbBBc"
-                                    alt="">
-                                <div class="">
-                                    <p>ciao</p>
-                                    <p class="collapse d-md-block">hola</p>
-                                </div>
+                        <tr>
+                        <tr>
+                            <th scope="row text-center">
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid me-2" src="https://picsum.photos/50" alt="">
+                                    <div class="text-break">
+                                        <div class="">Smartphone Samsung Galaxy S21</div>
+                                        <div class="collapse d-md-block small fw-light">Display AMOLED, fotocamera Ultra
+                                            Wide, batteria a lunga durata</div>
+                                    </div>
                             </th>
-                            <td>799,99€</td>
-                            <td>
+                            <td class="text-center collapse d-sm-table-cell">799,99€</td>
+                            <td class="text-center collapse d-md-table-cell">
                                 <i
                                     class="fa-solid fa-check text-success border border-success rounded-circle px-1 py-1"></i>
                             </td>
-                            <td>
+                            <td class="text-center">
                                 <i class="fa-solid fa-pen text-primary border border-primary rounded p-1"></i>
                                 <i class="fa-solid fa-trash text-danger border border-danger rounded p-1"></i>
                             </td>
-                        </tr>
-                        <tr class="text-center">
-                            <th class=" d-flex" scope="row"><img class=" w-25 me-2 "
-                                    src="https://fastly.picsum.photos/id/447/246/146.jpg?hmac=voh_lMJAX9XcbR0_PRvf9pcHPH2RrdwJoo3nzyUbBBc"
-                                    alt="">
-                                <div class="">
-                                    <p>ciao</p>
-                                    <p class="collapse d-md-block">hola</p>
-                                </div>
+                        <tr>
+                        <tr>
+                            <th scope="row text-center">
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid me-2" src="https://picsum.photos/50" alt="">
+                                    <div class="text-break">
+                                        <div class="">Smartphone Samsung Galaxy S21</div>
+                                        <div class="collapse d-md-block small fw-light">Display AMOLED, fotocamera Ultra
+                                            Wide, batteria a lunga durata</div>
+                                    </div>
                             </th>
-                            <td>799,99€</td>
-                            <td>
+                            <td class="text-center collapse d-sm-table-cell">799,99€</td>
+                            <td class="text-center collapse d-md-table-cell">
                                 <i
                                     class="fa-solid fa-check text-success border border-success rounded-circle px-1 py-1"></i>
                             </td>
-                            <td>
+                            <td class="text-center">
                                 <i class="fa-solid fa-pen text-primary border border-primary rounded p-1"></i>
                                 <i class="fa-solid fa-trash text-danger border border-danger rounded p-1"></i>
                             </td>
-                        </tr>
-                        <tr class="text-center">
-                            <th class=" d-flex" scope="row"><img class=" w-25 me-2 "
-                                    src="https://fastly.picsum.photos/id/447/246/146.jpg?hmac=voh_lMJAX9XcbR0_PRvf9pcHPH2RrdwJoo3nzyUbBBc"
-                                    alt="">
-                                <div class="">
-                                    <p>ciao</p>
-                                    <p class="collapse d-md-block">hola</p>
-                                </div>
+                        <tr>
+                        <tr>
+                            <th scope="row text-center">
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid me-2" src="https://picsum.photos/50" alt="">
+                                    <div class="text-break">
+                                        <div class="">Smartphone Samsung Galaxy S21</div>
+                                        <div class="collapse d-md-block small fw-light">Display AMOLED, fotocamera Ultra
+                                            Wide, batteria a lunga durata</div>
+                                    </div>
                             </th>
-                            <td>799,99€</td>
-                            <td>
+                            <td class="text-center collapse d-sm-table-cell">799,99€</td>
+                            <td class="text-center collapse d-md-table-cell">
                                 <i
                                     class="fa-solid fa-check text-success border border-success rounded-circle px-1 py-1"></i>
                             </td>
-                            <td>
+                            <td class="text-center">
                                 <i class="fa-solid fa-pen text-primary border border-primary rounded p-1"></i>
                                 <i class="fa-solid fa-trash text-danger border border-danger rounded p-1"></i>
                             </td>
-                        </tr>
-                        <tr class="text-center">
-                            <th class=" d-flex" scope="row"><img class=" w-25 me-2 "
-                                    src="https://fastly.picsum.photos/id/447/246/146.jpg?hmac=voh_lMJAX9XcbR0_PRvf9pcHPH2RrdwJoo3nzyUbBBc"
-                                    alt="">
-                                <div class="">
-                                    <p>ciao</p>
-                                    <p class="collapse d-md-block">hola</p>
-                                </div>
+                        <tr>
+                        <tr>
+                            <th scope="row text-center">
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid me-2" src="https://picsum.photos/50" alt="">
+                                    <div class="text-break">
+                                        <div class="">Smartphone Samsung Galaxy S21</div>
+                                        <div class="collapse d-md-block small fw-light">Display AMOLED, fotocamera Ultra
+                                            Wide, batteria a lunga durata</div>
+                                    </div>
                             </th>
-                            <td>799,99€</td>
-                            <td>
+                            <td class="text-center collapse d-sm-table-cell">799,99€</td>
+                            <td class="text-center collapse d-md-table-cell">
                                 <i
                                     class="fa-solid fa-check text-success border border-success rounded-circle px-1 py-1"></i>
                             </td>
-                            <td>
+                            <td class="text-center">
                                 <i class="fa-solid fa-pen text-primary border border-primary rounded p-1"></i>
                                 <i class="fa-solid fa-trash text-danger border border-danger rounded p-1"></i>
                             </td>
-                        </tr>
-                        <tr class="text-center">
-                            <th class=" d-flex" scope="row"><img class=" w-25 me-2 "
-                                    src="https://fastly.picsum.photos/id/447/246/146.jpg?hmac=voh_lMJAX9XcbR0_PRvf9pcHPH2RrdwJoo3nzyUbBBc"
-                                    alt="">
-                                <div class="">
-                                    <p>ciao</p>
-                                    <p class="collapse d-md-block">hola</p>
-                                </div>
+                        <tr>
+                        <tr>
+                            <th scope="row text-center">
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid me-2" src="https://picsum.photos/50" alt="">
+                                    <div class="text-break">
+                                        <div class="">Smartphone Samsung Galaxy S21</div>
+                                        <div class="collapse d-md-block small fw-light">Display AMOLED, fotocamera Ultra
+                                            Wide, batteria a lunga durata</div>
+                                    </div>
                             </th>
-                            <td>799,99€</td>
-                            <td>
+                            <td class="text-center collapse d-sm-table-cell">799,99€</td>
+                            <td class="text-center collapse d-md-table-cell">
                                 <i
                                     class="fa-solid fa-check text-success border border-success rounded-circle px-1 py-1"></i>
                             </td>
-                            <td>
+                            <td class="text-center">
                                 <i class="fa-solid fa-pen text-primary border border-primary rounded p-1"></i>
                                 <i class="fa-solid fa-trash text-danger border border-danger rounded p-1"></i>
                             </td>
-                        </tr>
-                        <tr class="text-center">
-                            <th class=" d-flex" scope="row"><img class=" w-25 me-2 "
-                                    src="https://fastly.picsum.photos/id/447/246/146.jpg?hmac=voh_lMJAX9XcbR0_PRvf9pcHPH2RrdwJoo3nzyUbBBc"
-                                    alt="">
-                                <div class="">
-                                    <p>ciao</p>
-                                    <p class="collapse d-md-block">hola</p>
-                                </div>
+                        <tr>
+                        <tr>
+                            <th scope="row text-center">
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid me-2" src="https://picsum.photos/50" alt="">
+                                    <div class="text-break">
+                                        <div class="">Smartphone Samsung Galaxy S21</div>
+                                        <div class="collapse d-md-block small fw-light">Display AMOLED, fotocamera Ultra
+                                            Wide, batteria a lunga durata</div>
+                                    </div>
                             </th>
-                            <td>799,99€</td>
-                            <td>
+                            <td class="text-center collapse d-sm-table-cell">799,99€</td>
+                            <td class="text-center collapse d-md-table-cell">
                                 <i
                                     class="fa-solid fa-check text-success border border-success rounded-circle px-1 py-1"></i>
                             </td>
-                            <td>
+                            <td class="text-center">
                                 <i class="fa-solid fa-pen text-primary border border-primary rounded p-1"></i>
                                 <i class="fa-solid fa-trash text-danger border border-danger rounded p-1"></i>
                             </td>
-                        </tr>
+                        <tr>
+                        <tr>
+                            <th scope="row text-center">
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid me-2" src="https://picsum.photos/50" alt="">
+                                    <div class="text-break">
+                                        <div class="">Smartphone Samsung Galaxy S21</div>
+                                        <div class="collapse d-md-block small fw-light">Display AMOLED, fotocamera Ultra
+                                            Wide, batteria a lunga durata</div>
+                                    </div>
+                            </th>
+                            <td class="text-center collapse d-sm-table-cell">799,99€</td>
+                            <td class="text-center collapse d-md-table-cell">
+                                <i
+                                    class="fa-solid fa-check text-success border border-success rounded-circle px-1 py-1"></i>
+                            </td>
+                            <td class="text-center">
+                                <i class="fa-solid fa-pen text-primary border border-primary rounded p-1"></i>
+                                <i class="fa-solid fa-trash text-danger border border-danger rounded p-1"></i>
+                            </td>
+                        <tr>
+                        <tr>
+                            <th scope="row text-center">
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid me-2" src="https://picsum.photos/50" alt="">
+                                    <div class="text-break">
+                                        <div class="">Smartphone Samsung Galaxy S21</div>
+                                        <div class="collapse d-md-block small fw-light">Display AMOLED, fotocamera Ultra
+                                            Wide, batteria a lunga durata</div>
+                                    </div>
+                            </th>
+                            <td class="text-center collapse d-sm-table-cell">799,99€</td>
+                            <td class="text-center collapse d-md-table-cell">
+                                <i
+                                    class="fa-solid fa-check text-success border border-success rounded-circle px-1 py-1"></i>
+                            </td>
+                            <td class="text-center">
+                                <i class="fa-solid fa-pen text-primary border border-primary rounded p-1"></i>
+                                <i class="fa-solid fa-trash text-danger border border-danger rounded p-1"></i>
+                            </td>
+                        <tr>
+                        <tr>
+                            <th scope="row text-center">
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid me-2" src="https://picsum.photos/50" alt="">
+                                    <div class="text-break">
+                                        <div class="">Smartphone Samsung Galaxy S21</div>
+                                        <div class="collapse d-md-block small fw-light">Display AMOLED, fotocamera Ultra
+                                            Wide, batteria a lunga durata</div>
+                                    </div>
+                            </th>
+                            <td class="text-center collapse d-sm-table-cell">799,99€</td>
+                            <td class="text-center collapse d-md-table-cell">
+                                <i
+                                    class="fa-solid fa-check text-success border border-success rounded-circle px-1 py-1"></i>
+                            </td>
+                            <td class="text-center">
+                                <i class="fa-solid fa-pen text-primary border border-primary rounded p-1"></i>
+                                <i class="fa-solid fa-trash text-danger border border-danger rounded p-1"></i>
+                            </td>
+                        <tr>
+
                     </tbody>
                 </table>
             </main>
