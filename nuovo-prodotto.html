@@ -41,7 +41,7 @@
     <!-- Sidebar -->
     <div class="container-fluid">
         <div class="row">
-            <div class="sidebar col-md-4 col-lg-3 col-xl-2 collapse d-md-block bg-dark vh-100"
+            <div class="sidebar col-md-4 col-lg-3 col-xl-2 collapse d-md-block bg-dark min-vh-100"
                 id="navbarSupportedContent">
                 <a href="/"
                     class="d-flex align-items-start mb-3 mb-md-0 me-md-auto text-white text-decoration-none mt-4">
@@ -96,29 +96,96 @@
             </div>
 
             <!-- Main -->
-            <main class="col-md-8 col-lg-9 p-5">
+            <main class="col-md-8 col-lg-9 p-2">
                 <h2 class="text-center mb-4">Crea un nuovo prodotto</h2>
                 <div class="text-center lh-1 mb-5">
-                    <p>I campi contrassegnati con un asterisco sono obbligatori</p>
+                    <p>I campi contrassegnati con un asterisco (*) sono obbligatori</p>
                     <p>Le immagini devono essere caricate in formato PNG e non devono superare i 4MB di dimensioni</p>
                 </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
+                            <!-- Nome prodotto -->
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="name"
-                                    placeholder="Iphone 15">
+                                <input type="text" class="form-control" id="name" placeholder="Iphone 15">
                             </div>
+                            <!-- Prezzo -->
                             <div class="mb-3">
                                 <label for="price" class="form-label">Prezzo</label>
-                                <input type="number" class="form-control" id="price"
-                                placeholder="899,99">
+                                <input type="number" class="form-control" id="price" placeholder="899,99">
+                            </div>
+                            <!-- Scelta multipla produttore -->
+                            <div>
+                                <label for="producer" class="">Marca</label>
+                                <select class="form-select" id="producer" aria-label="">
+                                    <option selected="">---Seleziona---</option>
+                                    <option value="1">Apple</option>
+                                    <option value="2">Samsung</option>
+                                    <option value="3">Honor</option>
+                                </select>
+                            </div>
+                            <!-- Area descrizione prodotto -->
+                            <div>
+                                <label for="description" class="form-label"></label>
+                                <textarea class="form-control"
+                                    placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri"
+                                    id="description" rows="3"></textarea>
                             </div>
                             <div class="mb-3">
-                                <label for="description" class="form-label"></label>
-                                <textarea class="form-control" placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri" id="description" rows="3"></textarea>
+                                <label for="formFileSm" class="form-label"></label>
+                                <input class="form-control form-control-sm" id="formFileSm" type="file" type="image">
                             </div>
+                            <div class="btn-group mb-3" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
+                                    checked>
+                                <label class="btn btn-outline-secondary" for="btnradio1">Disponibile</label>
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                <label class="btn btn-outline-secondary" for="btnradio2">Esaurito</label>
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                <label class="btn btn-outline-secondary" for="btnradio3">Fuori produzione</label>
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                                <label class="btn btn-outline-secondary" for="btnradio4">In arrivo</label>
+                            </div>
+                            <!-- Colonna 2, lista -->
+                            <ul class="list-group ">
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                    <label class="form-check-label" for="firstCheckbox">Fotocamera Principale</label>
+                                    <div class="mx-4 text-secondary">foto di alta qualità e registrazioni video nitide</div>
+                                    
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                    <label class="form-check-label" for="firstCheckbox">Scehrmo OLED</label>
+                                    <div class="mx-4 text-secondary">Offre colori vividi per un'esprienza visiva senza paragoni</div>
+                                    
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                    <label class="form-check-label" for="firstCheckbox">Processore Octa-core</label>
+                                    <div class="mx-4 text-secondary">prestazioni fluide e veloci per eseguire le applicazioni più esigenti</div>
+                                    
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                    <label class="form-check-label" for="firstCheckbox">Ricarica wireless
+                                    </label>
+                                    <div class="mx-4 text-secondary">supporta la ricarica wireless</div>
+                                    
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                    <label class="form-check-label" for="firstCheckbox">Connessione 5G</label>
+                                    <div class="mx-4 text-secondary">navigazione ultra veloce e streaming senza interruzioni</div>
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                    <label class="form-check-label" for="firstCheckbox">Tecnologia NFC</label>
+                                    <div class="mx-4 text-secondary">per effetuare pagamenti senza contatto</div>
+                                </li>
+                                
+                            </ul>
                         </div>
                     </div>
                 </div>
